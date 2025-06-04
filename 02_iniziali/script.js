@@ -4,20 +4,19 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function vowels(names) {
+function vowels(nomi) {
     const firstLetter = [];
 
-    for (let i = 0; i < names.length; i++) {
-        firstLetter.push(names[i].charAt(0));
+    for (let i = 0; i < nomi.length; i++) {
+        firstLetter.push(nomi[i].charAt(0));
     }
 
     return firstLetter;
 
 }
-const result = vowels(names);
+
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(result);
-
+console.log(vowels(names))
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
